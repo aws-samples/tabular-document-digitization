@@ -43,7 +43,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "inject-hitl": "node src/build/build-worker-template.js build/index.html",
+    "inject-hitl": "node src/scripts/build-worker-template.js build/index.html",
     "build-hitl": "REACT_APP_HITL=1 npm run build && npm run inject-hitl"
   },
   "eslintConfig": {

@@ -18,6 +18,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+### `S3_PREFIX="s3://bucket/folder" npm run build-hitl`
+
+Builds the app using `npm run build` script and creates a human-in-the-loop template html file (`augment-ui/build/worker-template.liquid.html`) that can be directly used in Amazon SageMaker Ground Truth (GT) and Augmented AI (A2I) assuming the frontend has been deployed to the given S3 prefix and GT/A2I has permission to read from the given bucket.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
@@ -32,11 +36,6 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `S3_PREFIX="s3://bucket/folder" npm run build-hitl`
-
-Builds the app and creates a worker template html file that can be directly used in GT/A2I assuming the frontend
-has been deployed to the given s3 prefix and GT/A2I has permission to read from the given bucket.
 
 ### `npm run eject`
 

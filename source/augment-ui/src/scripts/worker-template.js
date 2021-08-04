@@ -1,12 +1,7 @@
-const { JSDOM } = require("jsdom");
-const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
-const appDir = path.join(__dirname, "../../");
-const buildIndex = path.join(appDir, "build/index.html");
-const outputFilePath = path.join(appDir, "build/worker-template.liquid.html");
-const encoding = { encoding: "utf8" };
+const { JSDOM } = require("jsdom");
 
 // We have a valid html file parsed and we want to replace special hidden
 // input elements' data-src attributes to point to a liquid tag instead.
@@ -68,17 +63,21 @@ const buildWorkerTemplate = (inputHtmlStr, s3Prefix) => {
   });
 
   Array.from(doc.querySelectorAll("input.asset")).forEach((el) => {
+    const dataSrc = el.getAttribute("data-src");
+    if (!dataSrc) {
+      throw "input asset element has no data-src attribute";
+    }
     el.setAttribute(
       "data-src",
-      replacementToken(
-        el,
-        liquifyFrontendUri(el.getAttribute("data-src"), s3Prefix)
-      )
+      replacementToken(el, liquifyFrontendUri(dataSrc, s3Prefix))
     );
   });
 
   Array.from(doc.querySelectorAll("input.s3-file")).forEach((el) => {
     const dataSrc = el.getAttribute("data-src");
+    if (!dataSrc) {
+      throw "input s3-file element has no data-src attribute";
+    }
     const isLiteral = dataSrc.startsWith("s3://");
     const liquid = liquifyS3File(dataSrc, isLiteral);
     el.setAttribute("data-src", replacementToken(el, liquid));
@@ -87,10 +86,11 @@ const buildWorkerTemplate = (inputHtmlStr, s3Prefix) => {
   });
 
   Array.from(doc.querySelectorAll("input.json-var")).forEach((el) => {
-    el.setAttribute(
-      "data-src",
-      replacementToken(el, liquifyVar(el.getAttribute("data-src")))
-    );
+    const dataSrc = el.getAttribute("data-src");
+    if (!dataSrc) {
+      throw "input json-var element has no data-src attribute";
+    }
+    el.setAttribute("data-src", replacementToken(el, liquifyVar(dataSrc)));
     // No need to keep around attributes for local development.
     el.removeAttribute("data-local");
   });
@@ -105,28 +105,4 @@ const buildWorkerTemplate = (inputHtmlStr, s3Prefix) => {
   return liquidIndexHtml;
 };
 
-const runMain = () => {
-  // S3Prefix is the s3 path the frontend build is deployed at. It's used for referring
-  // to assets that ship with the frontend build (items in public/).
-  const s3Prefix = process.env.S3_PREFIX;
-
-  if (!s3Prefix) {
-    console.log(
-      "Couldn't read S3_PREFIX env variable, please set it and re-run"
-    );
-    // Exit with error code.
-    process.exit(1);
-  }
-
-  const indexHtmlStr = fs.readFileSync(buildIndex, encoding);
-  const liquidIndexHtml = buildWorkerTemplate(indexHtmlStr, s3Prefix);
-
-  fs.writeFileSync(outputFilePath, liquidIndexHtml);
-  console.log(`Wrote ${outputFilePath}`);
-};
-
-if (require.main === module) {
-  runMain();
-}
-
-module.exports = { buildWorkerTemplate };
+module.exports = buildWorkerTemplate;
