@@ -1,0 +1,12 @@
+#!/bin/bash
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+export AWS_PAGER=""
+export AWS_DEFAULT_OUTPUT="text"
+
+echo CF : Deploying all TDD Stacks
+cdk deploy --all --require-approval never
+
+echo CW : Deleting all TDD Log Groups
+aws logs describe-log-groups --output text | awk '{print $4}' | grep -i TDD | xargs -n1 aws logs delete-log-group --no-paginate --output text --log-group-name

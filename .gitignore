@@ -1,0 +1,11 @@
+__pycache__
+.coverage
+.coverage.*
+.DS_Store
+.cdk.out
+.venv
+.vscode
+.env
+.python-version
+sample
+debugs

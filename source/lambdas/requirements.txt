@@ -1,0 +1,7 @@
+boto3
+DotMap
+Pillow
+XlsxWriter
+pandas
+amazon-textract-caller
+amazon-textract-response-parser

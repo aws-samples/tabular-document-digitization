@@ -1,0 +1,116 @@
+{
+  "numPages": 1,
+  "tableTypes": [
+    {
+      "name": "Checking Transactions",
+      "columnTypes": [
+        "Date",
+        "Description",
+        "Transaction #",
+        "Check #",
+        "Amount",
+        "Reference",
+        "N/A"
+      ]
+    },
+    {
+      "name": "Savings Transactions",
+      "columnTypes": [
+        "Date",
+        "Description",
+        "Transaction #",
+        "Amount",
+        "Reference",
+        "N/A"
+      ]
+    },
+    {
+      "name": "Statement Summary"
+    }
+  ],
+  "pages": [
+    {
+      "pageNumber": 1,
+      "tables": [
+        {
+          "tableType": null,
+          "headerColumnTypes": {},
+          "rows": [
+            [
+              {
+                "text": "Date Paid",
+                "confidence": 99.57711029052734
+              },
+              {
+                "text": "Check Number",
+                "confidence": 99.67495346069336
+              },
+              {
+                "text": "Amount",
+                "confidence": 99.95789337158203
+              },
+              {
+                "text": "Reference Number",
+                "confidence": 99.91435623168945
+              }
+            ],
+            [
+              {
+                "text": "05-12",
+                "confidence": 99.7838363647461
+              },
+              {
+                "text": "1001",
+                "confidence": 99.88314819335938
+              },
+              {
+                "text": "75.00",
+                "confidence": 99.94635009765625
+              },
+              {
+                "text": "00012576589",
+                "confidence": 94.33197784423828
+              }
+            ],
+            [
+              {
+                "text": "05-18",
+                "confidence": 99.7630615234375
+              },
+              {
+                "text": "1002",
+                "confidence": 99.8163070678711
+              },
+              {
+                "text": "30.00",
+                "confidence": 99.81414031982422
+              },
+              {
+                "text": "00036547854",
+                "confidence": 98.11895751953125
+              }
+            ],
+            [
+              {
+                "text": "05-24",
+                "confidence": 99.81287384033203
+              },
+              {
+                "text": "1003",
+                "confidence": 99.85565948486328
+              },
+              {
+                "text": "200.00",
+                "confidence": 99.50917053222656
+              },
+              {
+                "text": "00094613547",
+                "confidence": 98.0196304321289
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

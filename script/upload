@@ -1,0 +1,46 @@
+#!/bin/bash
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+# upload <document> <replicas> <priority> 
+
+clear
+
+export AWS_PAGER=""
+export AWS_DEFAULT_OUTPUT="text"
+
+DOCUMENT="${1-sample/000.png}"
+REPLICAS="${2-1}"
+PRIORITY="p${3-0}"
+S3REMOVE="${4-0}"
+FILETYPE="${DOCUMENT##*.}"
+
+BRANCH="$(git rev-parse --symbolic-full-name --abbrev-ref HEAD)"
+BRANCH=${BRANCH/_/}
+
+REGION="us-east-1"
+AWSAID="$(aws sts get-caller-identity | awk '{print $1}')"
+BUCKET="tdd-${BRANCH}-store-document-${AWSAID}-${REGION}"
+
+if [[ $S3REMOVE -eq 1 ]]
+then
+  printf "Cleaning S3 Bucket.\n\n"
+  aws s3 rm s3://$BUCKET --recursive > /dev/null
+fi
+
+ LAST=$(aws s3 ls s3://${BUCKET}/acquire --recursive | grep -v /$ | grep -e 'd\d\+' | sed -e 's:.*/d::' -e 's:\..*::' | sort | tail -1)
+START=$((LAST+1))
+  END=$((LAST+1+REPLICAS))
+
+if [[ $LAST ]]
+then
+  printf "Continuing From Document d${LAST}.\n\n"
+fi
+
+for (( n=$START; n<$END; n++ ))
+do
+    identity=$(printf "d%03d" $n)
+    aws s3 cp ${DOCUMENT} "s3://${BUCKET}/acquire/${PRIORITY}/${identity}.${FILETYPE}"
+done
+
+printf "\nDone.\n"

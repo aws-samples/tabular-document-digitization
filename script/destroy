@@ -1,0 +1,21 @@
+#!/bin/bash
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+export AWS_PAGER=""
+export AWS_DEFAULT_OUTPUT="text"
+
+echo S3 : Emptying and Deleting all TDD Buckets
+aws s3 ls               | \
+awk '{print "s3://"$3}' | \
+grep -i TDD             | \
+xargs -n1 aws s3 rb --force > /dev/null
+
+echo CF : Destroying all TDD Stacks
+cdk destroy --all --force
+
+echo CW : Deleting all TDD Log Groups
+aws logs describe-log-groups | \
+awk '{print $4}'             | \
+grep -i TDD                  | \
+xargs -n1 aws logs delete-log-group --log-group-name > /dev/null

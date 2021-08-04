@@ -1,0 +1,2604 @@
+{
+  "numPages": 5,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "tables": [
+        {
+          "rows": [
+            [
+              {
+                "text": "Date Paid",
+                "confidence": 99.56672668457031
+              },
+              {
+                "text": "Check Number",
+                "confidence": 99.62554168701172
+              },
+              {
+                "text": "Amount",
+                "confidence": 99.94380187988281
+              },
+              {
+                "text": "Reference Number",
+                "confidence": 99.91216278076172
+              }
+            ],
+            [
+              {
+                "text": "05-12",
+                "confidence": 99.68197631835938
+              },
+              {
+                "text": "1001",
+                "confidence": 99.8609390258789
+              },
+              {
+                "text": "75.00",
+                "confidence": 99.96129608154297
+              },
+              {
+                "text": "00012576589",
+                "confidence": 90.42965698242188
+              }
+            ],
+            [
+              {
+                "text": "05-18",
+                "confidence": 99.52862548828125
+              },
+              {
+                "text": "1002",
+                "confidence": 99.7799301147461
+              },
+              {
+                "text": "30.00",
+                "confidence": 99.82002258300781
+              },
+              {
+                "text": "00036547854",
+                "confidence": 97.15586853027344
+              }
+            ],
+            [
+              {
+                "text": "05-24",
+                "confidence": 99.82086181640625
+              },
+              {
+                "text": "1003",
+                "confidence": 99.87356567382812
+              },
+              {
+                "text": "200.00",
+                "confidence": 99.87493133544922
+              },
+              {
+                "text": "00094613547",
+                "confidence": 99.00141143798828
+              }
+            ]
+          ]
+        },
+        {
+          "rows": [
+            [
+              {
+                "text": "Bank Statement",
+                "confidence": 99.77881622314453
+              },
+              {
+                "text": "Primary Account Number:",
+                "confidence": 99.8931655883789
+              },
+              {
+                "text": "000009752",
+                "confidence": 98.9660415649414
+              }
+            ],
+            [
+              {
+                "text": "If you have any questions about your statement, please call us at 816-234-2265",
+                "confidence": 99.78526012714093
+              },
+              {
+                "text": "Statement Date: Page Number:",
+                "confidence": 99.6845531463623
+              },
+              {
+                "text": "June 5, 2003 1",
+                "confidence": 99.4698371887207
+              }
+            ],
+            [
+              {
+                "text": "CONNECTIONS CHECKING Account # 000009752",
+                "confidence": 99.58506622314454
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "Account Summary Account # 000009752",
+                "confidence": 99.61033172607422
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "Beginning Balance on May 3, 2003",
+                "confidence": 99.67876942952473
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$7,126.11",
+                "confidence": 99.64478302001953
+              }
+            ],
+            [
+              {
+                "text": "Deposits & Other Credits",
+                "confidence": 99.91817092895508
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "+3,615.08",
+                "confidence": 99.54261016845703
+              }
+            ],
+            [
+              {
+                "text": "ATM Withdrawals & Debits",
+                "confidence": 99.87682342529297
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "-20.00",
+                "confidence": 99.7517318725586
+              }
+            ],
+            [
+              {
+                "text": "VISA Check Card Purchases & Debits",
+                "confidence": 99.7469367980957
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "-0.00",
+                "confidence": 99.3907470703125
+              }
+            ],
+            [
+              {
+                "text": "Withdrawals & Other Debits",
+                "confidence": 99.91734504699707
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "-0.00",
+                "confidence": 99.75875854492188
+              }
+            ],
+            [
+              {
+                "text": "Checks Paid",
+                "confidence": 99.69417953491211
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "-200.00",
+                "confidence": 99.09671783447266
+              }
+            ],
+            [
+              {
+                "text": "Ending Balance on June 5, 2003",
+                "confidence": 99.75034077962239
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$10,521.19",
+                "confidence": 99.80953216552734
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "pageNumber": 2,
+      "tables": [
+        {
+          "rows": [
+            [
+              {
+                "text": "Posting Date",
+                "confidence": 99.84750747680664
+              },
+              {
+                "text": "Transaction Date",
+                "confidence": 99.58972549438477
+              },
+              {
+                "text": "Description",
+                "confidence": 99.68461608886719
+              },
+              {
+                "text": "Money In (R)",
+                "confidence": 99.37397766113281
+              },
+              {
+                "text": "Money Out (R)",
+                "confidence": 99.88833872477214
+              },
+              {
+                "text": "Balance (R)",
+                "confidence": 99.86162948608398
+              }
+            ],
+            [
+              {
+                "text": "28/02/2018",
+                "confidence": 99.83100128173828
+              },
+              {
+                "text": "28/02/2018",
+                "confidence": 99.78755950927734
+              },
+              {
+                "text": "Payment Received: Socpengp -",
+                "confidence": 97.64296913146973
+              },
+              {
+                "text": "1 600.00",
+                "confidence": 99.24772644042969
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "1 551.37",
+                "confidence": 98.68092727661133
+              }
+            ],
+            [
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "7807040125081 3 Pension 1161370020",
+                "confidence": 99.53933143615723
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "28/02/2018",
+                "confidence": 99.62102508544922
+              },
+              {
+                "text": "28/02/2018",
+                "confidence": 99.73394012451172
+              },
+              {
+                "text": "Payment Received: Socpengp - 7807040125081 9 Pension 1161370029",
+                "confidence": 97.31155967712402
+              },
+              {
+                "text": "3 200.00",
+                "confidence": 98.53357696533203
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "4 751.37",
+                "confidence": 97.3230972290039
+              }
+            ],
+            [
+              {
+                "text": "28/02/2018",
+                "confidence": 99.799072265625
+              },
+              {
+                "text": "28/02/2018",
+                "confidence": 99.76591491699219
+              },
+              {
+                "text": "Interest Received",
+                "confidence": 99.64947128295898
+              },
+              {
+                "text": "0.67",
+                "confidence": 99.84859466552734
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "4 752.04",
+                "confidence": 96.43856048583984
+              }
+            ],
+            [
+              {
+                "text": "28/02/2018",
+                "confidence": 99.79966735839844
+              },
+              {
+                "text": "28/02/2018",
+                "confidence": 99.77440643310547
+              },
+              {
+                "text": "SMS Notification Fee",
+                "confidence": 99.78441365559895
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "0.80",
+                "confidence": 99.97245788574219
+              },
+              {
+                "text": "4 751.24",
+                "confidence": 96.23565673828125
+              }
+            ],
+            [
+              {
+                "text": "28/02/2018",
+                "confidence": 99.8139419555664
+              },
+              {
+                "text": "28/02/2018",
+                "confidence": 99.81576538085938
+              },
+              {
+                "text": "Monthly Account Admin Fee",
+                "confidence": 99.9366397857666
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.50",
+                "confidence": 99.90152740478516
+              },
+              {
+                "text": "4 745.74",
+                "confidence": 95.18384552001953
+              }
+            ],
+            [
+              {
+                "text": "01/03/2018",
+                "confidence": 99.8341293334961
+              },
+              {
+                "text": "01/03/2018",
+                "confidence": 99.81903839111328
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.94061851501465
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.50",
+                "confidence": 99.90679168701172
+              },
+              {
+                "text": "4 740.24",
+                "confidence": 98.12792205810547
+              }
+            ],
+            [
+              {
+                "text": "01/03/2018",
+                "confidence": 99.84901428222656
+              },
+              {
+                "text": "01/03/2018",
+                "confidence": 99.82450103759766
+              },
+              {
+                "text": "ATM Cash Withdrawal Aacu 174 De Villiers S",
+                "confidence": 99.0425386428833
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "4 700.00",
+                "confidence": 98.87592315673828
+              },
+              {
+                "text": "40.24",
+                "confidence": 99.78540802001953
+              }
+            ],
+            [
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "(Card 9817)",
+                "confidence": 98.47684478759766
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "01/03/2018",
+                "confidence": 99.883056640625
+              },
+              {
+                "text": "01/03/2018",
+                "confidence": 99.86700439453125
+              },
+              {
+                "text": "Cash Withdrawal Fee (ATM)",
+                "confidence": 99.73362350463867
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "8.75",
+                "confidence": 99.31751251220703
+              },
+              {
+                "text": "31.49",
+                "confidence": 99.86104583740234
+              }
+            ],
+            [
+              {
+                "text": "01/03/2018",
+                "confidence": 99.90522003173828
+              },
+              {
+                "text": "01/03/2018",
+                "confidence": 99.91212463378906
+              },
+              {
+                "text": "SMS Notification Fee",
+                "confidence": 99.76358032226562
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "0.40",
+                "confidence": 99.9113998413086
+              },
+              {
+                "text": "31.09",
+                "confidence": 99.90562438964844
+              }
+            ],
+            [
+              {
+                "text": "28/03/2018",
+                "confidence": 99.67732238769531
+              },
+              {
+                "text": "28/03/2018",
+                "confidence": 99.71027374267578
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.94539070129395
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.50",
+                "confidence": 99.87140655517578
+              },
+              {
+                "text": "25.59",
+                "confidence": 99.8712158203125
+              }
+            ],
+            [
+              {
+                "text": "29/03/2018",
+                "confidence": 99.43461608886719
+              },
+              {
+                "text": "29/03/2018",
+                "confidence": 99.53914642333984
+              },
+              {
+                "text": "Payment Received: Socpengp -",
+                "confidence": 97.78139305114746
+              },
+              {
+                "text": "3 380.00",
+                "confidence": 99.16888427734375
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "3 405.59",
+                "confidence": 98.70748519897461
+              }
+            ],
+            [
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "7807040125081 9 Pension 1184783857",
+                "confidence": 98.97100067138672
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "29/03/2018",
+                "confidence": 99.62178039550781
+              },
+              {
+                "text": "29/03/2018",
+                "confidence": 99.6594467163086
+              },
+              {
+                "text": "Payment Received: Socpengp",
+                "confidence": 99.0946553548177
+              },
+              {
+                "text": "1 690.00",
+                "confidence": 99.4083366394043
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5 095.59",
+                "confidence": 96.56155776977539
+              }
+            ],
+            [
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "7807040125081 3 Pension 1184783860",
+                "confidence": 99.43231201171875
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "29/03/2018",
+                "confidence": 99.33325958251953
+              },
+              {
+                "text": "29/03/2018",
+                "confidence": 99.44383239746094
+              },
+              {
+                "text": "SMS Notification Fee",
+                "confidence": 99.71060180664062
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "0.80",
+                "confidence": 99.9303970336914
+              },
+              {
+                "text": "5 094.79",
+                "confidence": 95.98043060302734
+              }
+            ],
+            [
+              {
+                "text": "30/03/2018",
+                "confidence": 99.67314910888672
+              },
+              {
+                "text": "30/03/2018",
+                "confidence": 99.72390747070312
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.92627334594727
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.50",
+                "confidence": 99.92127990722656
+              },
+              {
+                "text": "5 089.29",
+                "confidence": 98.64069366455078
+              }
+            ],
+            [
+              {
+                "text": "30/03/2018",
+                "confidence": 99.63865661621094
+              },
+              {
+                "text": "30/03/2018",
+                "confidence": 99.74382781982422
+              },
+              {
+                "text": "ATM Cash Withdrawal Aacu 174 De Villiers S",
+                "confidence": 98.89532566070557
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5 000.00",
+                "confidence": 98.78394317626953
+              },
+              {
+                "text": "89.29",
+                "confidence": 99.87338256835938
+              }
+            ],
+            [
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "(Card 9817)",
+                "confidence": 98.08100509643555
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "30/03/2018",
+                "confidence": 99.60072326660156
+              },
+              {
+                "text": "30/03/2018",
+                "confidence": 99.7025375366211
+              },
+              {
+                "text": "Cash Withdrawal Fee (ATM)",
+                "confidence": 99.67439079284668
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "8.75",
+                "confidence": 99.80828857421875
+              },
+              {
+                "text": "80.54",
+                "confidence": 99.8533935546875
+              }
+            ],
+            [
+              {
+                "text": "30/03/2018",
+                "confidence": 99.51486206054688
+              },
+              {
+                "text": "30/03/2018",
+                "confidence": 99.66868591308594
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.94473075866699
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.50",
+                "confidence": 99.91397094726562
+              },
+              {
+                "text": "75.04",
+                "confidence": 99.8801498413086
+              }
+            ],
+            [
+              {
+                "text": "30/03/2018",
+                "confidence": 99.66216278076172
+              },
+              {
+                "text": "30/03/2018",
+                "confidence": 99.69489288330078
+              },
+              {
+                "text": "SMS Notification Fee",
+                "confidence": 99.81819661458333
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "0.40",
+                "confidence": 99.93987274169922
+              },
+              {
+                "text": "74.64",
+                "confidence": 99.7469711303711
+              }
+            ],
+            [
+              {
+                "text": "31/03/2018",
+                "confidence": 99.84133911132812
+              },
+              {
+                "text": "31/03/2018",
+                "confidence": 99.81688690185547
+              },
+              {
+                "text": "Interest Received",
+                "confidence": 99.64411926269531
+              },
+              {
+                "text": "0.82",
+                "confidence": 99.95442962646484
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "75.46",
+                "confidence": 99.75904083251953
+              }
+            ],
+            [
+              {
+                "text": "31/03/2018",
+                "confidence": 99.86141204833984
+              },
+              {
+                "text": "31/03/2018",
+                "confidence": 99.82459259033203
+              },
+              {
+                "text": "Monthly Account Admin Fee",
+                "confidence": 99.93290519714355
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.75",
+                "confidence": 99.83399200439453
+              },
+              {
+                "text": "69.71",
+                "confidence": 99.677490234375
+              }
+            ],
+            [
+              {
+                "text": "02/04/2018",
+                "confidence": 99.79611206054688
+              },
+              {
+                "text": "30/03/2018",
+                "confidence": 99.70915222167969
+              },
+              {
+                "text": "Spar Danville (Card 9817)",
+                "confidence": 99.52508354187012
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "45.00",
+                "confidence": 99.90447998046875
+              },
+              {
+                "text": "24.71",
+                "confidence": 99.74242401123047
+              }
+            ],
+            [
+              {
+                "text": "03/04/2018",
+                "confidence": 99.82492065429688
+              },
+              {
+                "text": "03/04/2018",
+                "confidence": 99.84500885009766
+              },
+              {
+                "text": "Self-service Statement Print Fee",
+                "confidence": 99.6629524230957
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "2.52",
+                "confidence": 99.8308334350586
+              },
+              {
+                "text": "22.19",
+                "confidence": 99.78485107421875
+              }
+            ],
+            [
+              {
+                "text": "04/04/2018",
+                "confidence": 99.80555725097656
+              },
+              {
+                "text": "04/04/2018",
+                "confidence": 99.76800537109375
+              },
+              {
+                "text": "Self-service Statement Print Fee",
+                "confidence": 99.67664527893066
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "2.52",
+                "confidence": 99.87884521484375
+              },
+              {
+                "text": "19.67",
+                "confidence": 99.72220611572266
+              }
+            ],
+            [
+              {
+                "text": "13/04/2018",
+                "confidence": 99.77775573730469
+              },
+              {
+                "text": "13/04/2018",
+                "confidence": 99.8427734375
+              },
+              {
+                "text": "Branch Card Replacement Fee",
+                "confidence": 99.8347339630127
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "60.53",
+                "confidence": 99.88108825683594
+              },
+              {
+                "text": "- 40.86",
+                "confidence": 96.26440811157227
+              }
+            ],
+            [
+              {
+                "text": "13/04/2018",
+                "confidence": 99.88448333740234
+              },
+              {
+                "text": "13/04/2018",
+                "confidence": 99.85576629638672
+              },
+              {
+                "text": "SMS Notification Fee",
+                "confidence": 99.78747812906902
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "0.80",
+                "confidence": 99.97591400146484
+              },
+              {
+                "text": "- 41.66",
+                "confidence": 94.35789489746094
+              }
+            ],
+            [
+              {
+                "text": "24/04/2018",
+                "confidence": 99.4084243774414
+              },
+              {
+                "text": "24/04/2018",
+                "confidence": 99.11979675292969
+              },
+              {
+                "text": "Self-service Statement Print Fee",
+                "confidence": 95.24350166320801
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "2.52",
+                "confidence": 99.26516723632812
+              },
+              {
+                "text": "- 44.18",
+                "confidence": 92.75662994384766
+              }
+            ],
+            [
+              {
+                "text": "26/04/2018",
+                "confidence": 99.46908569335938
+              },
+              {
+                "text": "26/04/2018",
+                "confidence": 99.4793930053711
+              },
+              {
+                "text": "Self-service Statement Print Fee",
+                "confidence": 99.64645767211914
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "2.52",
+                "confidence": 99.74472045898438
+              },
+              {
+                "text": "- 46.70",
+                "confidence": 93.16397857666016
+              }
+            ],
+            [
+              {
+                "text": "27/04/2018",
+                "confidence": 99.84342956542969
+              },
+              {
+                "text": "27/04/2018",
+                "confidence": 99.8001480102539
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.91751480102539
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.55",
+                "confidence": 99.9395751953125
+              },
+              {
+                "text": "- 52.25",
+                "confidence": 93.65864944458008
+              }
+            ],
+            [
+              {
+                "text": "27/04/2018",
+                "confidence": 99.85913848876953
+              },
+              {
+                "text": "27/04/2018",
+                "confidence": 99.84431457519531
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.92868232727051
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.55",
+                "confidence": 99.93522644042969
+              },
+              {
+                "text": "- 57.80",
+                "confidence": 93.07262802124023
+              }
+            ],
+            [
+              {
+                "text": "28/04/2018",
+                "confidence": 99.8255844116211
+              },
+              {
+                "text": "28/04/2018",
+                "confidence": 99.80867004394531
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.92994117736816
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.55",
+                "confidence": 99.87728118896484
+              },
+              {
+                "text": "- 63.35",
+                "confidence": 92.45388793945312
+              }
+            ],
+            [
+              {
+                "text": "28/04/2018",
+                "confidence": 99.75460052490234
+              },
+              {
+                "text": "28/04/2018",
+                "confidence": 99.7872085571289
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.94292259216309
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.55",
+                "confidence": 99.9239501953125
+              },
+              {
+                "text": "- 68.90",
+                "confidence": 92.25384140014648
+              }
+            ],
+            [
+              {
+                "text": "28/04/2018",
+                "confidence": 99.70401763916016
+              },
+              {
+                "text": "28/04/2018",
+                "confidence": 99.76751708984375
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.95587921142578
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.55",
+                "confidence": 99.9398193359375
+              },
+              {
+                "text": "- 74.45",
+                "confidence": 93.7496452331543
+              }
+            ],
+            [
+              {
+                "text": "29/04/2018",
+                "confidence": 99.30220031738281
+              },
+              {
+                "text": "29/04/2018",
+                "confidence": 99.54265594482422
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.9261302947998
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.55",
+                "confidence": 99.93801879882812
+              },
+              {
+                "text": "- 80.00",
+                "confidence": 95.95975112915039
+              }
+            ],
+            [
+              {
+                "text": "29/04/2018",
+                "confidence": 99.5625228881836
+              },
+              {
+                "text": "29/04/2018",
+                "confidence": 99.53016662597656
+              },
+              {
+                "text": "ATM Balance Enquiry Fee",
+                "confidence": 99.92275047302246
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.55",
+                "confidence": 99.87910461425781
+              },
+              {
+                "text": "- 85.55",
+                "confidence": 93.3100700378418
+              }
+            ],
+            [
+              {
+                "text": "29/04/2018",
+                "confidence": 99.62299346923828
+              },
+              {
+                "text": "29/04/2018",
+                "confidence": 99.61570739746094
+              },
+              {
+                "text": "ATM Declined Withdrawal Fee",
+                "confidence": 99.87368965148926
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "5.55",
+                "confidence": 99.74864196777344
+              },
+              {
+                "text": "- 91.10",
+                "confidence": 92.9461898803711
+              }
+            ],
+            [
+              {
+                "text": "30/04/2018",
+                "confidence": 99.57451629638672
+              },
+              {
+                "text": "30/04/2018",
+                "confidence": 99.61700439453125
+              },
+              {
+                "text": "Payment Received: Socpengp -",
+                "confidence": 95.99500465393066
+              },
+              {
+                "text": "1 690.00",
+                "confidence": 98.97688674926758
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "1 598.90",
+                "confidence": 96.98046493530273
+              }
+            ],
+            [
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "7807040125081 3 Pension 1209546329",
+                "confidence": 99.22870635986328
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "30/04/2018",
+                "confidence": 99.4961166381836
+              },
+              {
+                "text": "30/04/2018",
+                "confidence": 99.61579895019531
+              },
+              {
+                "text": "Payment Received: Socpengp -",
+                "confidence": 97.6081600189209
+              },
+              {
+                "text": "3 380.00",
+                "confidence": 97.93046951293945
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "4 978.90",
+                "confidence": 83.4168472290039
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "pageNumber": 3,
+      "tables": [
+        {
+          "rows": [
+            [
+              {
+                "text": "Date",
+                "confidence": 89.73574829101562
+              },
+              {
+                "text": "Description",
+                "confidence": 32.46133804321289
+              },
+              {
+                "text": "Amount",
+                "confidence": 99.8609390258789
+              }
+            ],
+            [
+              {
+                "text": "09/04/2018",
+                "confidence": 67.55005645751953
+              },
+              {
+                "text": "LERBXOXXX7618",
+                "confidence": 18.115320205688477
+              },
+              {
+                "text": "$148.87",
+                "confidence": 98.83837127685547
+              }
+            ],
+            [
+              {
+                "text": "09/04/2018",
+                "confidence": 86.8717041015625
+              },
+              {
+                "text": "TRANSFER FROMBUSINESS SOLUTIONS ACCOUNT",
+                "confidence": 87.33272743225098
+              },
+              {
+                "text": "$107,532.01",
+                "confidence": 99.27274322509766
+              }
+            ],
+            [
+              {
+                "text": "09/05/2018",
+                "confidence": 89.05211639404297
+              },
+              {
+                "text": "TRANSFER FROMBUSINESS SOLUTIONS ACCOUNT",
+                "confidence": 91.17124557495117
+              },
+              {
+                "text": "$45,450.81",
+                "confidence": 97.74761199951172
+              }
+            ],
+            [
+              {
+                "text": "09/06/2018",
+                "confidence": 76.86092376708984
+              },
+              {
+                "text": "Incoming Wre",
+                "confidence": 74.57380294799805
+              },
+              {
+                "text": "$11,793.22",
+                "confidence": 81.61693572998047
+              }
+            ],
+            [
+              {
+                "text": "09/06/2018",
+                "confidence": 96.8675308227539
+              },
+              {
+                "text": "TRANSFER FROMBUSINESS SOLUTIONE ACCOUNT",
+                "confidence": 86.19179916381836
+              },
+              {
+                "text": "$127,785.64",
+                "confidence": 42.00712203979492
+              }
+            ],
+            [
+              {
+                "text": "09/07/2018",
+                "confidence": 98.43917846679688
+              },
+              {
+                "text": "CUSTOMER PAYMENT",
+                "confidence": 99.65720748901367
+              },
+              {
+                "text": "$3,324.97",
+                "confidence": 98.23020935058594
+              }
+            ],
+            [
+              {
+                "text": "09/07/2018",
+                "confidence": 98.068115234375
+              },
+              {
+                "text": "DIRECT DEP",
+                "confidence": 97.32084274291992
+              },
+              {
+                "text": "$40,693.13",
+                "confidence": 63.68645477294922
+              }
+            ],
+            [
+              {
+                "text": "09/07/2018",
+                "confidence": 96.75684356689453
+              },
+              {
+                "text": "Freddie Mac ACH",
+                "confidence": 88.10258483886719
+              },
+              {
+                "text": "$56,111.25",
+                "confidence": 99.41937255859375
+              }
+            ],
+            [
+              {
+                "text": "09/07/2018",
+                "confidence": 97.30795288085938
+              },
+              {
+                "text": "CUSTOMER PAYMENT",
+                "confidence": 99.64781951904297
+              },
+              {
+                "text": "$70,147.56",
+                "confidence": 97.68714904785156
+              }
+            ],
+            [
+              {
+                "text": "09/10/2018",
+                "confidence": 96.5406265258789
+              },
+              {
+                "text": "MMILER BXXXXXX7618",
+                "confidence": 97.24752807617188
+              },
+              {
+                "text": "$33,881.16",
+                "confidence": 99.24202728271484
+              }
+            ],
+            [
+              {
+                "text": "09/10/2018",
+                "confidence": 91.80558776855469
+              },
+              {
+                "text": "TRANSFER FROMBUSINESS SOLUTIONS ACCOUNT",
+                "confidence": 89.42375564575195
+              },
+              {
+                "text": "$136,072.12",
+                "confidence": 99.58960723876953
+              }
+            ],
+            [
+              {
+                "text": "09/11/2018",
+                "confidence": 99.28020477294922
+              },
+              {
+                "text": "TRANSFER FROM BUSINESS SOLUTIONS ACCOUNT",
+                "confidence": 88.47824783325196
+              },
+              {
+                "text": "$63,637.02",
+                "confidence": 98.89898681640625
+              }
+            ],
+            [
+              {
+                "text": "09/12/2018",
+                "confidence": 97.97628784179688
+              },
+              {
+                "text": "TRANSFER FROMBUSINESS SOLUTIONS ACCOUNT",
+                "confidence": 94.76238822937012
+              },
+              {
+                "text": "$131,862.01",
+                "confidence": 97.37059020996094
+              }
+            ]
+          ]
+        },
+        {
+          "rows": [
+            [
+              {
+                "text": "Data",
+                "confidence": 96.73899841308594
+              },
+              {
+                "text": "Description",
+                "confidence": 42.2086181640625
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "Amount",
+                "confidence": 99.92266845703125
+              }
+            ],
+            [
+              {
+                "text": "09/04/2018",
+                "confidence": 94.35047149658203
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 96.44853973388672
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$5,442.23",
+                "confidence": 99.49896240234375
+              }
+            ],
+            [
+              {
+                "text": "09/06/2018",
+                "confidence": 88.93181610107422
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 91.87400817871094
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$2,482.00",
+                "confidence": 99.28275299072266
+              }
+            ],
+            [
+              {
+                "text": "09/06/2018",
+                "confidence": 97.13362884521484
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 98.42140197753906
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$92,379.04",
+                "confidence": 89.31776428222656
+              }
+            ],
+            [
+              {
+                "text": "09/10/2018",
+                "confidence": 95.42902374267578
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 98.83648173014323
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,558.82",
+                "confidence": 91.01285552978516
+              }
+            ],
+            [
+              {
+                "text": "09/14/2018",
+                "confidence": 90.25163269042969
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 98.9247055053711
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$9,859.04",
+                "confidence": 83.66899108886719
+              }
+            ],
+            [
+              {
+                "text": "09/17/2018",
+                "confidence": 98.64503479003906
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 99.39327239990234
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$137.94",
+                "confidence": 99.67455291748047
+              }
+            ],
+            [
+              {
+                "text": "09/17/2018",
+                "confidence": 98.82756042480469
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 98.1343994140625
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$628.05",
+                "confidence": 91.73635864257812
+              }
+            ],
+            [
+              {
+                "text": "09/17/2018",
+                "confidence": 99.14313507080078
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 98.62069702148438
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$6,183.89",
+                "confidence": 99.52352905273438
+              }
+            ],
+            [
+              {
+                "text": "0920/2018",
+                "confidence": 57.40449905395508
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 98.82738240559895
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,315.51",
+                "confidence": 99.41695404052734
+              }
+            ],
+            [
+              {
+                "text": "0921/2018",
+                "confidence": 46.49995040893555
+              },
+              {
+                "text": "MERCHANT CAPTURE DEPOSIT",
+                "confidence": 99.43481699625652
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$21,060.29",
+                "confidence": 82.40360260009766
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "pageNumber": 4,
+      "tables": [
+        {
+          "rows": [
+            [
+              {
+                "text": "Post Date",
+                "confidence": 61.854881286621094
+              },
+              {
+                "text": "Description",
+                "confidence": 68.88829803466797
+              },
+              {
+                "text": "Debits",
+                "confidence": 97.62220764160156
+              },
+              {
+                "text": "Credits",
+                "confidence": 87.1110610961914
+              },
+              {
+                "text": "Balance",
+                "confidence": 99.0250244140625
+              }
+            ],
+            [
+              {
+                "text": "09/01/2018",
+                "confidence": 93.9591293334961
+              },
+              {
+                "text": "Beginning Balance",
+                "confidence": 99.54359817504883
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$18,806.47",
+                "confidence": 53.66830825805664
+              }
+            ],
+            [
+              {
+                "text": "09/04/2018",
+                "confidence": 80.73554992675781
+              },
+              {
+                "text": "Signature POS Debit 09/02 MD BALTIMORE GIANT FOOD",
+                "confidence": 98.74895858764648
+              },
+              {
+                "text": "$57.48",
+                "confidence": 99.5761489868164
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$18,747.99",
+                "confidence": 99.7259750366211
+              }
+            ],
+            [
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "INCSEQ# 071582",
+                "confidence": 77.89408111572266
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "09/04/2018",
+                "confidence": 73.1279296875
+              },
+              {
+                "text": "Natonstar dbe Mr Cooper XXXXXX6179",
+                "confidence": 76.17854843139648
+              },
+              {
+                "text": "$1,989.60",
+                "confidence": 99.13562774658203
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$16,758.39",
+                "confidence": 97.53936767578125
+              }
+            ],
+            [
+              {
+                "text": "09/05/2018",
+                "confidence": 71.04910278320312
+              },
+              {
+                "text": "HMB WARRANTY 8002473680 5829389",
+                "confidence": 98.1018295288086
+              },
+              {
+                "text": "$42.99",
+                "confidence": 97.98492431640625
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$16,715.40",
+                "confidence": 99.70282745361328
+              }
+            ],
+            [
+              {
+                "text": "09/05/2018",
+                "confidence": 89.00122833251953
+              },
+              {
+                "text": "SAMS CLUB MC ONLINE PMT CKF426104254POS",
+                "confidence": 96.75755310058594
+              },
+              {
+                "text": "$4,671.42",
+                "confidence": 99.575927734375
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$12,043.98",
+                "confidence": 99.6419906616211
+              }
+            ],
+            [
+              {
+                "text": "09/05/2018",
+                "confidence": 83.6432113647461
+              },
+              {
+                "text": "DISCOVERBANK ETRANSFER",
+                "confidence": 95.1310806274414
+              },
+              {
+                "text": "$8,212.00",
+                "confidence": 91.29656219482422
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,831.98",
+                "confidence": 99.716064453125
+              }
+            ],
+            [
+              {
+                "text": "09/06/2018",
+                "confidence": 94.68916320800781
+              },
+              {
+                "text": "BLTMORE GASELEC ONLINE PMT",
+                "confidence": 94.80146026611328
+              },
+              {
+                "text": "$160.75",
+                "confidence": 89.56268310546875
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,671.23",
+                "confidence": 99.5754623413086
+              }
+            ],
+            [
+              {
+                "text": "09/06/2018",
+                "confidence": 63.99317932128906
+              },
+              {
+                "text": "AMAZON",
+                "confidence": 95.37071228027344
+              },
+              {
+                "text": "$170.00",
+                "confidence": 99.49039459228516
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,501.23",
+                "confidence": 99.5561752319336
+              }
+            ],
+            [
+              {
+                "text": "09/06/2018",
+                "confidence": 95.17919158935547
+              },
+              {
+                "text": "DEVONSHIRE Il co CONS CP BC5198",
+                "confidence": 85.817808787028
+              },
+              {
+                "text": "$195.00",
+                "confidence": 98.65289306640625
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,306.23",
+                "confidence": 99.47383117675781
+              }
+            ],
+            [
+              {
+                "text": "09/07/2018",
+                "confidence": 96.15779876708984
+              },
+              {
+                "text": "DEPOSIT",
+                "confidence": 97.19395446777344
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$653.25",
+                "confidence": 88.281982421875
+              },
+              {
+                "text": "$3,958.48",
+                "confidence": 53.96389389038086
+              }
+            ],
+            [
+              {
+                "text": "09/07/2018",
+                "confidence": 97.46179962158203
+              },
+              {
+                "text": "TARGET ONUNE PMT",
+                "confidence": 98.06061045328777
+              },
+              {
+                "text": "$88.59",
+                "confidence": 96.33008575439453
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,870.89",
+                "confidence": 99.69361114501953
+              }
+            ],
+            [
+              {
+                "text": "09/10/2018",
+                "confidence": 93.44821166992188
+              },
+              {
+                "text": "09/07 MD BALTIMORE 10101",
+                "confidence": 99.10926818847656
+              },
+              {
+                "text": "$180.00",
+                "confidence": 99.64356994628906
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,690.89",
+                "confidence": 99.63612365722656
+              }
+            ],
+            [
+              {
+                "text": "09/10/2018",
+                "confidence": 88.38114929199219
+              },
+              {
+                "text": "PHIDDELPHIARD SEQ# 008838 Signature POS Debit 09/08 MD BALTIMORE GIANT FOOD 1",
+                "confidence": 85.20728317896526
+              },
+              {
+                "text": "$70.11",
+                "confidence": 99.38770294189453
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,620.78",
+                "confidence": 99.47077941894531
+              }
+            ],
+            [
+              {
+                "text": "09/10/2018",
+                "confidence": 92.41925811767578
+              },
+              {
+                "text": "AFITNESS",
+                "confidence": 82.09703063964844
+              },
+              {
+                "text": "$1298",
+                "confidence": 90.3446273803711
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,607.80",
+                "confidence": 98.67726135253906
+              }
+            ],
+            [
+              {
+                "text": "09/11/2018",
+                "confidence": 99.25130462646484
+              },
+              {
+                "text": "AT&T MOBIUTY ONLINE PMT",
+                "confidence": 75.49507713317871
+              },
+              {
+                "text": "$116.22",
+                "confidence": 97.7314682006836
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,491.58",
+                "confidence": 99.69295501708984
+              }
+            ],
+            [
+              {
+                "text": "09/14/2018",
+                "confidence": 95.76897430419922
+              },
+              {
+                "text": "DEPOSIT",
+                "confidence": 94.76502227783203
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$606.62",
+                "confidence": 94.66246032714844
+              },
+              {
+                "text": "$4,096.20",
+                "confidence": 55.85374069213867
+              }
+            ],
+            [
+              {
+                "text": "09/14/2018",
+                "confidence": 94.43109130859375
+              },
+              {
+                "text": "DIRECT DEP",
+                "confidence": 55.98248291015625
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$3,038.33",
+                "confidence": 54.04470443725586
+              },
+              {
+                "text": "$7,131.53",
+                "confidence": 99.75660705566406
+              }
+            ],
+            [
+              {
+                "text": "09/14/2018",
+                "confidence": 95.0313949584961
+              },
+              {
+                "text": "Signature POS Debit 09/13 MD BALTIMORE GIANT",
+                "confidence": 98.95571899414062
+              },
+              {
+                "text": "$19.86",
+                "confidence": 98.35401153564453
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$7,111.67",
+                "confidence": 99.76483917236328
+              }
+            ],
+            [
+              {
+                "text": "09/17/2018",
+                "confidence": 97.3432388305664
+              },
+              {
+                "text": "ATMWthdrawal 09/15 WV INWOOD MARTINSBURG-NWOOD",
+                "confidence": 70.61870651245117
+              },
+              {
+                "text": "$400.00",
+                "confidence": 98.85269927978516
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$6,711.67",
+                "confidence": 99.77093505859375
+              }
+            ],
+            [
+              {
+                "text": "09/17/2018",
+                "confidence": 99.07891845703125
+              },
+              {
+                "text": "Signature POS Debit 09/16 MD BALTIMORE GIANT",
+                "confidence": 97.96055930001395
+              },
+              {
+                "text": "$14.06",
+                "confidence": 98.65601348876953
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$6,697.61",
+                "confidence": 99.58172607421875
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "pageNumber": 5,
+      "tables": [
+        {
+          "rows": [
+            [
+              {
+                "text": "DATE DESCRIPTION",
+                "confidence": 99.71001434326172
+              },
+              {
+                "text": "WITHDRAWAL DEPOSIT",
+                "confidence": 99.39034271240234
+              },
+              {
+                "text": "BALANCE",
+                "confidence": 99.35287475585938
+              }
+            ],
+            [
+              {
+                "text": "Previous balance",
+                "confidence": 99.75177764892578
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "27,584.38",
+                "confidence": 99.06941223144531
+              }
+            ],
+            [
+              {
+                "text": "03/02 Internet Bill",
+                "confidence": 98.12814331054688
+              },
+              {
+                "text": "75.99",
+                "confidence": 99.80789184570312
+              },
+              {
+                "text": "27,508.39",
+                "confidence": 99.60001373291016
+              }
+            ],
+            [
+              {
+                "text": "03/05 Electric Bill",
+                "confidence": 99.69706471761067
+              },
+              {
+                "text": "253.68",
+                "confidence": 98.31909942626953
+              },
+              {
+                "text": "27,254.71",
+                "confidence": 99.32378387451172
+              }
+            ],
+            [
+              {
+                "text": "03/06 Check No. 4598 Payment from Lisa Williams",
+                "confidence": 99.55056381225586
+              },
+              {
+                "text": "456.84",
+                "confidence": 98.9606704711914
+              },
+              {
+                "text": "27,711.55",
+                "confidence": 99.3467788696289
+              }
+            ],
+            [
+              {
+                "text": "03/10 Deposit from Credit Card Processor",
+                "confidence": 99.77567799886067
+              },
+              {
+                "text": "5,891.26",
+                "confidence": 99.4488525390625
+              },
+              {
+                "text": "33,602.81",
+                "confidence": 99.38563537597656
+              }
+            ],
+            [
+              {
+                "text": "03/12 Payroll Run",
+                "confidence": 99.68184407552083
+              },
+              {
+                "text": "3,894.75",
+                "confidence": 99.16434478759766
+              },
+              {
+                "text": "29,708.06",
+                "confidence": 99.41058349609375
+              }
+            ],
+            [
+              {
+                "text": "03/16 Debit Transaction Main Office Wholesale",
+                "confidence": 99.51207605997722
+              },
+              {
+                "text": "243.46",
+                "confidence": 98.90518188476562
+              },
+              {
+                "text": "29,464.60",
+                "confidence": 99.5906982421875
+              }
+            ],
+            [
+              {
+                "text": "03/21 Rent Bill",
+                "confidence": 99.72111256917317
+              },
+              {
+                "text": "750.00",
+                "confidence": 99.86966705322266
+              },
+              {
+                "text": "28,714.60",
+                "confidence": 99.01239013671875
+              }
+            ],
+            [
+              {
+                "text": "03/21 Check No. 234 Payment From Mark Moore",
+                "confidence": 99.82597637176514
+              },
+              {
+                "text": "268.84",
+                "confidence": 99.06505584716797
+              },
+              {
+                "text": "28,983.44",
+                "confidence": 98.54431915283203
+              }
+            ],
+            [
+              {
+                "text": "03/26 Payroll Run",
+                "confidence": 99.76152801513672
+              },
+              {
+                "text": "3,743.23",
+                "confidence": 98.9610366821289
+              },
+              {
+                "text": "25,240.21",
+                "confidence": 97.58914947509766
+              }
+            ],
+            [
+              {
+                "text": "03/28 Deposit",
+                "confidence": 99.7425308227539
+              },
+              {
+                "text": "3,656.45",
+                "confidence": 99.55085754394531
+              },
+              {
+                "text": "28,896.66",
+                "confidence": 99.54906463623047
+              }
+            ],
+            [
+              {
+                "text": "03/29 Debit Transaction ABC Business Supplies",
+                "confidence": 99.51258341471355
+              },
+              {
+                "text": "1,548.96",
+                "confidence": 99.7463607788086
+              },
+              {
+                "text": "27,347.70",
+                "confidence": 99.33365631103516
+              }
+            ],
+            [
+              {
+                "text": "Ending balance",
+                "confidence": 99.9192008972168
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "27,347.70",
+                "confidence": 99.45663452148438
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

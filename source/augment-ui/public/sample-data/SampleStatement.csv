@@ -1,0 +1,19 @@
+Date,Description,Ref.,Withdrawals,Deposits,Balance
+2003-10-08,Previous balance,,,,0.55
+2003-10-14,Payroll Deposit - HOTEL,,,694.8,695.36
+2003-10-14,Web Bill Payment - MASTERCARD,9685,200.00,,495.36
+2003-10-16,ATM Withdrawal - INTERAC,3990,21.25,,474.11
+2003-10-16,Fees - Interac,,1.50,,472.61
+2003-10-20,Interac Purchase - ELECTRONICS,1975,2.99,,469.62
+2003-10-21,Web Bill Payment - AMEX,3314,300.00,,169.62
+2003-10-22,ATM Withdrawal - FIRST BANK,0064,100.00,,69.62
+2003-10-23,Interarc Purchase - SUPERMARKET,1559,29.08,,40.54
+2003-10-24,Interac Refund - ELECTRONICS,1975,,2.99,43.53
+2003-10-27,Telephone Bill Payment -VIISA,2475,6.77,,36.76
+2003-10-28,Payroll Deposit - HOTEL,,,694.81,731.57
+2003-10-30,Web Funds Transfer - From SAVINGS,2620,,50.00,781.57
+2003-11-03,Pre-Auth; Payment - 1NSURANCE,,33.55,,748.02
+2003-11-03,Cheque No. - 409,,100.00,,648.02
+2003-11-06,Mortgage Payment,,710.49,,-62.47
+2003-11-07,Fees - Overdraft,,5.00,,-67.47
+2003-11-08,Fees - Monthly,,5.00,,-72.47

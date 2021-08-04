@@ -1,0 +1,258 @@
+{
+  "num_pages": 1,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "tables": [
+        {
+          "rows": [
+            [
+              {
+                "text": "Date Paid",
+                "confidence": 99.57711029052734
+              },
+              {
+                "text": "Check Number",
+                "confidence": 99.67495346069336
+              },
+              {
+                "text": "Amount",
+                "confidence": 99.95789337158203
+              },
+              {
+                "text": "Reference Number",
+                "confidence": 99.91435623168945
+              }
+            ],
+            [
+              {
+                "text": "05-12",
+                "confidence": 99.7838363647461
+              },
+              {
+                "text": "1001",
+                "confidence": 99.88314819335938
+              },
+              {
+                "text": "75.00",
+                "confidence": 99.94635009765625
+              },
+              {
+                "text": "00012576589",
+                "confidence": 94.33197784423828
+              }
+            ],
+            [
+              {
+                "text": "05-18",
+                "confidence": 99.7630615234375
+              },
+              {
+                "text": "1002",
+                "confidence": 99.8163070678711
+              },
+              {
+                "text": "30.00",
+                "confidence": 99.81414031982422
+              },
+              {
+                "text": "00036547854",
+                "confidence": 98.11895751953125
+              }
+            ],
+            [
+              {
+                "text": "05-24",
+                "confidence": 99.81287384033203
+              },
+              {
+                "text": "1003",
+                "confidence": 99.85565948486328
+              },
+              {
+                "text": "200.00",
+                "confidence": 99.50917053222656
+              },
+              {
+                "text": "00094613547",
+                "confidence": 98.0196304321289
+              }
+            ]
+          ]
+        },
+        {
+          "rows": [
+            [
+              {
+                "text": "Bank Statement",
+                "confidence": 99.82352066040039
+              },
+              {
+                "text": "Primary Account",
+                "confidence": 99.96395111083984
+              },
+              {
+                "text": "Number: 000009752",
+                "confidence": 99.58800506591797
+              }
+            ],
+            [
+              {
+                "text": "If you have any questions about your statement, please call us at 816-234-2265",
+                "confidence": 99.84261145958534
+              },
+              {
+                "text": "Statement Date: Page Number:",
+                "confidence": 99.69135093688965
+              },
+              {
+                "text": "June 5, 2003 1",
+                "confidence": 99.43047332763672
+              }
+            ],
+            [
+              {
+                "text": "CONNECTIONS CHECKING Account # 000009752",
+                "confidence": 99.61659698486328
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "Account Summary Account # 000009752",
+                "confidence": 99.75346984863282
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "",
+                "confidence": 0
+              }
+            ],
+            [
+              {
+                "text": "Beginning Balance on May 3, 2003",
+                "confidence": 99.67084503173828
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$7,126.11",
+                "confidence": 99.73916625976562
+              }
+            ],
+            [
+              {
+                "text": "Deposits & Other Credits",
+                "confidence": 99.87017250061035
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "+3,615.08",
+                "confidence": 99.6209945678711
+              }
+            ],
+            [
+              {
+                "text": "ATM Withdrawals & Debits",
+                "confidence": 99.82497596740723
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "-20.00",
+                "confidence": 99.65442657470703
+              }
+            ],
+            [
+              {
+                "text": "VISA Check Card Purchases & Debits",
+                "confidence": 99.64165751139323
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "-0.00",
+                "confidence": 99.01360321044922
+              }
+            ],
+            [
+              {
+                "text": "Withdrawals & Other Debits",
+                "confidence": 99.85507011413574
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "-0.00",
+                "confidence": 99.3581771850586
+              }
+            ],
+            [
+              {
+                "text": "Checks Paid",
+                "confidence": 99.56862258911133
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "-200.00",
+                "confidence": 99.26780700683594
+              }
+            ],
+            [
+              {
+                "text": "Ending Balance on June 5, 2003",
+                "confidence": 99.65276590983073
+              },
+              {
+                "text": "",
+                "confidence": 0
+              },
+              {
+                "text": "$10,521.19",
+                "confidence": 99.86136627197266
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
