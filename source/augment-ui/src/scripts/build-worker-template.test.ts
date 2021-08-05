@@ -17,18 +17,18 @@ test("converts to liquid", () => {
     {
       description: "javascript with href gets liquid tag",
       input: `<link href="/mypath">`,
-      expected: `<link href="{{ "${testS3Prefix}/mypath" | grant_read_access }}">`,
+      expected: `<link href="{{ '${testS3Prefix}/mypath' | grant_read_access }}">`,
     },
     {
       description: "input with asset class gets liquid tag",
       input: `<input class="asset" data-name="myName" data-src="/myPath">`,
-      expected: `<input class="asset" data-name="myName" data-src="{{ "${testS3Prefix}/myPath" | grant_read_access }}">`,
+      expected: `<input class="asset" data-name="myName" data-src="{{ '${testS3Prefix}/myPath' | grant_read_access }}">`,
     },
     {
       description:
         "input with s3-file class and literal s3 file gets literal liquid tag",
       input: `<input class="s3-file" data-name="myName" data-src="s3://hello/world">`,
-      expected: `<input class="s3-file" data-name="myName" data-src="{{ "s3://hello/world" | grant_read_access }}">`,
+      expected: `<input class="s3-file" data-name="myName" data-src="{{ 's3://hello/world' | grant_read_access }}">`,
     },
     {
       description:
