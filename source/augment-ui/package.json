@@ -23,7 +23,7 @@
     "@types/styled-components": "^5.1.4",
     "bootstrap": "^4.5.3",
     "easy-peasy": "^4.0.1",
-    "jsdom": "^16.4.0",
+    "jsdom": "^16.5.0",
     "lodash": "^4.17.20",
     "pdfjs-dist": "^2.6.347",
     "polished": "^4.0.3",
