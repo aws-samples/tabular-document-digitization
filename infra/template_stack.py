@@ -55,7 +55,7 @@ class TemplateStack(core.Stack):
         }
 
         bundler = {
-            'image'      : core.BundlingDockerImage.from_registry('node:lts'),
+            'image'      : core.BundlingDockerImage.from_registry('node:16.14.2'),
             'user'       : 'root',
             'environment': environ,
             'command'    :
