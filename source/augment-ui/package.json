@@ -33,7 +33,7 @@
     "react-data-grid-addons": "^6.1.0",
     "react-dom": "^16.14.0",
     "react-pdf": "^5.0.0",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "^5.0.1",
     "react-zoom-pan-pinch": "^1.6.1",
     "styled-components": "^5.2.0",
     "typescript": "^3.9.7"
