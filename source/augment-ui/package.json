@@ -23,7 +23,7 @@
     "@types/styled-components": "^5.1.4",
     "bootstrap": "^4.5.3",
     "easy-peasy": "^4.0.1",
-    "jsdom": "^16.4.0",
+    "jsdom": "^16.7.0",
     "lodash": "^4.17.20",
     "pdfjs-dist": "^2.6.347",
     "polished": "^4.0.3",
@@ -33,7 +33,7 @@
     "react-data-grid-addons": "^6.1.0",
     "react-dom": "^16.14.0",
     "react-pdf": "^5.0.0",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "^5.0.1",
     "react-zoom-pan-pinch": "^1.6.1",
     "styled-components": "^5.2.0",
     "typescript": "^3.9.7"
