@@ -148,8 +148,8 @@ class PipelineMachineConstruct(Construct):
 
         return (
             Choice(self, Manager.CHECKUP)
-            .when(Condition.boolean_equals('$.restartPipeline', True), restart_step)
-            .when(Condition.boolean_equals('$.processDocument', True), process_step)
+            .when(Condition.boolean_equals('$.Payload.restartPipeline', True), restart_step)
+            .when(Condition.boolean_equals('$.Payload.processDocument', True), process_step)
             .otherwise(                                                breakup_step)
         )
 
