@@ -1,9 +1,10 @@
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 
-from aws_cdk.core                    import Construct, Duration
-from aws_cdk.aws_stepfunctions       import StateMachine, Task, Parallel, Choice, Condition, Wait, WaitTime
-from aws_cdk.aws_stepfunctions_tasks import InvokeFunction
+from aws_cdk                         import Duration
+from aws_cdk.aws_stepfunctions       import StateMachine, Parallel, Choice, Condition, Wait, WaitTime, DefinitionBody
+from aws_cdk.aws_stepfunctions_tasks import LambdaInvoke
+from constructs import Construct
 
 from .pipeline_manager_construct import (
     PipelineManagerConstruct,
@@ -60,7 +61,7 @@ class PipelineMachineConstruct(Construct):
             scope              = self,
             id                 = f'{self.__prefix}-state-pipeline',
             state_machine_name = f'{self.__prefix}-state-pipeline',
-            definition         = step_startup,
+            definition_body    = DefinitionBody.from_chainable(step_startup),
         )
 
         for lambda_function in self.__pipeline_trigger_construct.get_trigger_lambdas().values():
@@ -73,20 +74,20 @@ class PipelineMachineConstruct(Construct):
             self.__pipeline_manager_construct.get_manager_lambdas()
         )
 
-        return Task(
+        return LambdaInvoke(
             scope       = self,
             id          = Manager.STARTUP,
-            task        = InvokeFunction(manager_lambdas[Manager.STARTUP]),
+            task        = manager_lambdas[Manager.STARTUP],
         )
 
     def __get_promote_step(self):
         manager_lambdas = (
             self.__pipeline_manager_construct.get_manager_lambdas()
         )
-        return Task(
+        return LambdaInvoke(
             scope       = self,
             id          = Manager.PROMOTE,
-            task        = InvokeFunction(manager_lambdas[Manager.PROMOTE]),
+            task        = manager_lambdas[Manager.PROMOTE],
         )
 
     def __get_process_step(self):
@@ -126,10 +127,10 @@ class PipelineMachineConstruct(Construct):
             Aspect.AWAIT : self.__pipeline_process_construct.get_stage_await_lambdas()
         }[aspect][stage]
 
-        return Task(
+        return LambdaInvoke(
             scope       = self,
             id          = f'{stage}-{aspect}',
-            task        = InvokeFunction(lambda_function)
+            task        = lambda_function
         )
 
     def __get_process_chain(self, stage):
@@ -158,10 +159,10 @@ class PipelineMachineConstruct(Construct):
             self.__pipeline_manager_construct.get_manager_lambdas()
         )
 
-        return Task(
+        return LambdaInvoke(
             scope       = self,
             id          = Manager.BREAKUP,
-            task        = InvokeFunction(manager_lambdas[Manager.BREAKUP])
+            task        = manager_lambdas[Manager.BREAKUP]
         )
 
     def __get_restart_step(self):
@@ -170,10 +171,10 @@ class PipelineMachineConstruct(Construct):
             self.__pipeline_manager_construct.get_manager_lambdas()
         )
 
-        return Task(
+        return LambdaInvoke(
             scope       = self,
             id          = Manager.RESTART,
-            task        = InvokeFunction(manager_lambdas[Manager.RESTART])
+            task        = manager_lambdas[Manager.RESTART]
         )
 
     def __get_standby_step(self):

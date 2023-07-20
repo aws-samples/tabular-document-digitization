@@ -4,8 +4,9 @@
 from pathlib import Path
 
 import jsii
-from aws_cdk import core, aws_lambda, aws_s3
+from aws_cdk import aws_lambda, aws_s3, Duration, CustomResource
 from aws_cdk.custom_resources import Provider
+from constructs import Construct
 
 
 @jsii.implements(aws_s3.IBucket)
@@ -13,7 +14,7 @@ class S3CustomBucketConstruct(aws_s3.Bucket):
 
     def __init__(
             self,
-            scope: core.Construct,
+            scope: Construct,
             bucket_name: str,
             id: str,
             recursive_object_removal: bool = False,
@@ -32,7 +33,7 @@ class S3CustomBucketConstruct(aws_s3.Bucket):
                 code          = aws_lambda.Code.from_asset(lambda_path),
                 handler       = 's3_custom_bucket_manager.lambda_handler',
                 runtime       = aws_lambda.Runtime.PYTHON_3_8,
-                timeout       = core.Duration.minutes(15),
+                timeout       = Duration.minutes(15),
                 memory_size   = 3000
             )
 
@@ -42,7 +43,7 @@ class S3CustomBucketConstruct(aws_s3.Bucket):
                 on_event_handler = lambda_func
             )
 
-            deletion_resource = core.CustomResource(
+            deletion_resource = CustomResource(
                 scope         = scope,
                 id            = f'{id}-object-remover-resource',
                 service_token = provider.service_token,

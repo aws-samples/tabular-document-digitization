@@ -5,8 +5,9 @@ from typing  import List, Dict
 from pathlib import Path
 
 from aws_cdk import (
-    core, aws_lambda
+    aws_lambda, Duration
 )
+from constructs import Construct
 
 class Manager:
     STARTUP = 'startup'
@@ -17,10 +18,10 @@ class Manager:
     CHECKUP = 'checkup'
     STANDBY = 'standby'
 
-class PipelineManagerConstruct(core.Construct):
+class PipelineManagerConstruct(Construct):
     def __init__(
         self,
-        scope  : core.Construct,
+        scope  : Construct,
         id     : str,
         prefix : str,
         layers : List[aws_lambda.LayerVersion],
@@ -83,7 +84,7 @@ class PipelineManagerConstruct(core.Construct):
             code          = aws_lambda.Code.from_asset(f'{self.__source}/manager/{manager}'),
             handler       = 'handler.lambda_handler',
             runtime       = aws_lambda.Runtime.PYTHON_3_8,
-            timeout       = core.Duration.minutes(15),
+            timeout       = Duration.minutes(15),
             memory_size   = 3000,
             environment   = environment,
         )

@@ -2,7 +2,8 @@
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
 
-from aws_cdk.core import App
+import aws_cdk as cdk
+
 from pathlib      import Path
 
 from infra.standard_utils import Env
@@ -16,7 +17,7 @@ suffix = Env.GetSuffix()
 
 if  __name__ == '__main__':
 
-    app    = App()
+    app     = cdk.App()
 
     # baseline_stack = BaselineStack(
     #     scope  = app,

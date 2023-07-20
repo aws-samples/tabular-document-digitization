@@ -3,18 +3,19 @@
 
 from pathlib import Path
 
-from aws_cdk import core, aws_iam, aws_lambda, aws_logs
+from aws_cdk import aws_iam, aws_lambda, aws_logs, Duration, CustomResource, Aws
 from aws_cdk.custom_resources import (
-    Provider,
+    Provider
 )
 
+from constructs import Construct
 from .a2i_template_construct import A2ITemplateConstruct
 
-class A2IWorkflowConstruct(core.Construct):
+class A2IWorkflowConstruct(Construct):
 
     def __init__(
             self,
-            scope             : core.Construct,
+            scope             : Construct,
             prefix            : str,
             workflow_name     : str,
             s3_output_path    : str,
@@ -52,7 +53,7 @@ class A2IWorkflowConstruct(core.Construct):
             code          = aws_lambda.Code.from_asset(lambda_path),
             handler       = 'a2i_workflow_manager.lambda_handler',
             runtime       = aws_lambda.Runtime.PYTHON_3_8,
-            timeout       = core.Duration.minutes(15),
+            timeout       = Duration.minutes(15),
             memory_size   = 3000,
             role          = self.__get_custom_resource_creation_iam_role()
         )
@@ -63,7 +64,7 @@ class A2IWorkflowConstruct(core.Construct):
             on_event_handler = lambda_func
         )
 
-        self.__workflow_resource = core.CustomResource(
+        self.__workflow_resource = CustomResource(
             scope         = self,
             id            = self.__workflow_name,
             service_token = provider.service_token,
@@ -84,7 +85,7 @@ class A2IWorkflowConstruct(core.Construct):
 
     def get_workflow_arn(self):
 
-        return f'arn:aws:sagemaker:{core.Aws.REGION}:{core.Aws.ACCOUNT_ID}:flow-definition/{self.__workflow_name}'
+        return f'arn:aws:sagemaker:{Aws.REGION}:{Aws.ACCOUNT_ID}:flow-definition/{self.__workflow_name}'
 
     def __get_workflow_role(self):
 

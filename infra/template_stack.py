@@ -2,21 +2,24 @@
 # SPDX-License-Identifier: Apache-2.0
 
 from aws_cdk import (
-    core,
+    Stack,
     aws_s3,
     aws_s3_deployment,
+    RemovalPolicy,
+    DockerImage    
 )
 
+from constructs import Construct
 from pathlib import Path
 
 from infra.shared.s3_custom_bucket_construct import S3CustomBucketConstruct
 
 
-class TemplateStack(core.Stack):
+class TemplateStack(Stack):
 
     def __init__(
             self,
-            scope  : core.Construct,
+            scope  : Construct,
             id     : str,
             prefix : str,
             suffix : str,
@@ -38,7 +41,7 @@ class TemplateStack(core.Stack):
             id                       = self.__bucket_name,
             bucket_name              = self.__bucket_name,
             block_public_access      = aws_s3.BlockPublicAccess.BLOCK_ALL,
-            removal_policy           = core.RemovalPolicy.DESTROY,
+            removal_policy           = RemovalPolicy.DESTROY,
             recursive_object_removal = True
         )
 
@@ -55,7 +58,7 @@ class TemplateStack(core.Stack):
         }
 
         bundler = {
-            'image'      : core.BundlingDockerImage.from_registry('node:16.14.2'),
+            'image'      : DockerImage.from_registry('node:16.14.2'),
             'user'       : 'root',
             'environment': environ,
             'command'    :
