@@ -77,7 +77,7 @@ class PipelineMachineConstruct(Construct):
         return LambdaInvoke(
             scope       = self,
             id          = Manager.STARTUP,
-            task        = manager_lambdas[Manager.STARTUP],
+            lambda_function        = manager_lambdas[Manager.STARTUP],
         )
 
     def __get_promote_step(self):
@@ -87,7 +87,7 @@ class PipelineMachineConstruct(Construct):
         return LambdaInvoke(
             scope       = self,
             id          = Manager.PROMOTE,
-            task        = manager_lambdas[Manager.PROMOTE],
+            lambda_function        = manager_lambdas[Manager.PROMOTE],
         )
 
     def __get_process_step(self):
@@ -130,7 +130,7 @@ class PipelineMachineConstruct(Construct):
         return LambdaInvoke(
             scope       = self,
             id          = f'{stage}-{aspect}',
-            task        = lambda_function
+            lambda_function        = lambda_function
         )
 
     def __get_process_chain(self, stage):
@@ -162,7 +162,7 @@ class PipelineMachineConstruct(Construct):
         return LambdaInvoke(
             scope       = self,
             id          = Manager.BREAKUP,
-            task        = manager_lambdas[Manager.BREAKUP]
+            lambda_function        = manager_lambdas[Manager.BREAKUP]
         )
 
     def __get_restart_step(self):
@@ -174,7 +174,7 @@ class PipelineMachineConstruct(Construct):
         return LambdaInvoke(
             scope       = self,
             id          = Manager.RESTART,
-            task        = manager_lambdas[Manager.RESTART]
+            lambda_function        = manager_lambdas[Manager.RESTART]
         )
 
     def __get_standby_step(self):
