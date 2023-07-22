@@ -25,6 +25,8 @@ class Database:
         Fetch a specific document
         """
 
+        document_id = document_id.lower()
+
         try:
             response = Database.Table.get_item(Key = {'DocumentID': document_id})
         except Exception as e:
@@ -67,7 +69,8 @@ class Database:
         """
         Update a specific document
         """
-
+        document.DocID = document.DocID.lower()
+        
         response = Database.Table.put_item(Item = document.to_dict())
 
         Logger.info(

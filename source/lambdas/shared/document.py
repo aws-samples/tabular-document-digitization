@@ -131,6 +131,14 @@ class Document:
     @property
     def CurrentMap(self) -> StageMap:
         return getattr(self, f'{self.Stage.title()}Map')
+    
+    @property
+    def DocID(self):
+        return self.DocumentID
+
+    @DocID.setter
+    def DocID(self, val):
+        self.DocumentID = val
 
     @staticmethod
     def from_dict(x):
