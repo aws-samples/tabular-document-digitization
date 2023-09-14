@@ -6,8 +6,10 @@ from pathlib import Path
 from boto3   import client
 
 from aws_cdk import (
-    core, aws_sqs, aws_lambda, aws_sns, aws_sns_subscriptions, aws_iam, aws_events, aws_events_targets
+    aws_sqs, aws_lambda, aws_sns, aws_sns_subscriptions, aws_iam, aws_events, 
+    aws_events_targets, Aws, Duration
 )
+from constructs import Construct
 
 from .a2i_workflow_construct import A2IWorkflowConstruct
 from .a2i_template_construct import A2ITemplateConstruct
@@ -26,11 +28,11 @@ class Aspect:
     ACTOR = 'actor'
     AWAIT = 'await'
 
-class PipelineProcessConstruct(core.Construct):
+class PipelineProcessConstruct(Construct):
 
     def __init__(
         self,
-        scope  : core.Construct,
+        scope  : Construct,
         id     : str,
         prefix : str,
         common : dict,
@@ -158,7 +160,7 @@ class PipelineProcessConstruct(core.Construct):
                 raise Exception(f'Work team : {workteam} you have added does not exist in your account Make sure to '
                                 'create work team from aws console.')
 
-            workteam_arn = f'arn:aws:sagemaker:{core.Aws.REGION}:{core.Aws.ACCOUNT_ID}:workteam/private-crowd/{workteam}'
+            workteam_arn = f'arn:aws:sagemaker:{Aws.REGION}:{Aws.ACCOUNT_ID}:workteam/private-crowd/{workteam}'
 
           # Custom HumanReview Workflow Resource
             workflow_resource = A2IWorkflowConstruct(
@@ -356,7 +358,7 @@ class PipelineProcessConstruct(core.Construct):
             code          = aws_lambda.Code.from_asset(f'{self.__source}/processor/{stage}'),
             handler       = f'{aspect}.lambda_handler',
             runtime       = aws_lambda.Runtime.PYTHON_3_8,
-            timeout       = core.Duration.minutes(15),
+            timeout       = Duration.minutes(15),
             memory_size   = 3000,
             environment   = environment
         )

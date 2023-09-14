@@ -2,18 +2,20 @@
 # SPDX-License-Identifier: Apache-2.0
 
 from aws_cdk import (
-    core,
     aws_s3,
     aws_s3_deployment,
+    Stack,
+    RemovalPolicy
 )
 
+from constructs import Construct
 from pathlib import Path
 
-class BaselineStack(core.Stack):
+class BaselineStack(Stack):
 
     def __init__(
             self,
-            scope  : core.Construct,
+            scope  : Construct,
             id     : str,
             prefix : str,
             suffix : str,
@@ -39,7 +41,7 @@ class BaselineStack(core.Stack):
                 id                  = self.__resource_bucket_name,
                 bucket_name         = self.__resource_bucket_name,
                 block_public_access = aws_s3.BlockPublicAccess.BLOCK_ALL,
-                removal_policy      = core.RemovalPolicy.DESTROY
+                removal_policy      = RemovalPolicy.DESTROY
             )
 
 
@@ -49,7 +51,7 @@ class BaselineStack(core.Stack):
                 id                  = self.__document_bucket_name,
                 bucket_name         = self.__document_bucket_name,
                 block_public_access = aws_s3.BlockPublicAccess.BLOCK_ALL,
-                removal_policy      = core.RemovalPolicy.DESTROY
+                removal_policy      = RemovalPolicy.DESTROY
             )        
     
     def get_resources(self):

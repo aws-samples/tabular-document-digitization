@@ -2,9 +2,12 @@
 # SPDX-License-Identifier: Apache-2.0
 
 from aws_cdk import (
-    core, aws_s3, aws_lambda, aws_s3_notifications, aws_dynamodb
+    aws_s3, aws_lambda, aws_dynamodb, Stack, RemovalPolicy, 
+    BundlingOptions,  Aws, DockerImage
+
 )
 
+from constructs import Construct
 from pathlib import Path
 
 from .pipeline.pipeline_process_construct import PipelineProcessConstruct
@@ -14,10 +17,10 @@ from .pipeline.pipeline_machine_construct import PipelineMachineConstruct
 from .shared.s3_custom_bucket_construct import S3CustomBucketConstruct
 
 
-class PipelineStack(core.Stack):
+class PipelineStack(Stack):
     def __init__(
             self,
-            scope  : core.Construct,
+            scope  : Construct,
             id     : str,
             prefix : str,
             suffix : str,
@@ -42,7 +45,7 @@ class PipelineStack(core.Stack):
             bucket_name              = self.__bucket_name,
             recursive_object_removal = True,
             block_public_access      = aws_s3.BlockPublicAccess.BLOCK_ALL,
-            removal_policy           = core.RemovalPolicy.DESTROY,
+            removal_policy           = RemovalPolicy.DESTROY,
             cors                     = [
                 aws_s3.CorsRule(
                     allowed_methods=[
@@ -53,8 +56,8 @@ class PipelineStack(core.Stack):
             ]
         )
 
-        shared_bundler = core.BundlingOptions(
-            image   = aws_lambda.Runtime.PYTHON_3_8.bundling_docker_image,
+        shared_bundler = BundlingOptions(
+            image   = DockerImage.from_registry(image="lambci/lambda:build-python3.8"),
             user    = 'root',
             command =
             [
@@ -104,7 +107,7 @@ class PipelineStack(core.Stack):
             table_name      = table_name,
             partition_key   = aws_dynamodb.Attribute(name = table_pk, type = aws_dynamodb.AttributeType.STRING),
           # sort_key        = aws_dynamodb.Attribute(name = table_sk, type = aws_dynamodb.AttributeType.STRING), # do not want sk -> access item with just DocumentID
-            removal_policy  = core.RemovalPolicy.DESTROY,
+            removal_policy  = RemovalPolicy.DESTROY,
         )
 
         self.__tdd_table_pipeline.add_global_secondary_index(
@@ -122,8 +125,8 @@ class PipelineStack(core.Stack):
             'INDEX_PROGRESS' : index_name,
             'PREFIX'         : self.__prefix,
             'SUFFIX'         : self.__suffix,
-            'ACCOUNT'        : core.Aws.ACCOUNT_ID,
-            'REGION'         : core.Aws.REGION,
+            'ACCOUNT'        : Aws.ACCOUNT_ID,
+            'REGION'         : Aws.REGION,
         }
 
       # Constructs Pipeline Stage Process Lambdas

@@ -5,9 +5,11 @@ from typing  import List
 from pathlib import Path
 
 from aws_cdk import (
-    core, aws_lambda, aws_s3, aws_iam, aws_s3_notifications
+    aws_lambda, aws_s3, aws_iam, aws_s3_notifications, Duration, 
+    CustomResource
 )
 
+from constructs import Construct
 from aws_cdk.custom_resources import (
     Provider
 )
@@ -15,10 +17,10 @@ from aws_cdk.custom_resources import (
 class Trigger:
     S3 = 's3'
 
-class PipelineTriggerConstruct(core.Construct):
+class PipelineTriggerConstruct(Construct):
     def __init__(
         self,
-        scope  : core.Construct,
+        scope  : Construct,
         id     : str,
         prefix : str,
         layers : List[aws_lambda.LayerVersion],
@@ -89,7 +91,7 @@ class PipelineTriggerConstruct(core.Construct):
             code          = aws_lambda.Code.from_asset(lambda_path),
             handler       = 's3_trigger_manager.lambda_handler',
             runtime       = aws_lambda.Runtime.PYTHON_3_8,
-            timeout       = core.Duration.minutes(15),
+            timeout       = Duration.minutes(15),
             memory_size   = 3000,
             role          = lambda_role,
         )
@@ -100,7 +102,7 @@ class PipelineTriggerConstruct(core.Construct):
             on_event_handler = lambda_func
         )
 
-        trigger_resource = core.CustomResource(
+        trigger_resource = CustomResource(
             scope         = self,
             id            = f'{self.__prefix}-resource-trigger-s3',
             service_token = provider.service_token,
@@ -120,7 +122,7 @@ class PipelineTriggerConstruct(core.Construct):
             code          = aws_lambda.Code.from_asset(f'{self.__source}/trigger/{trigger}'),
             handler       = 'handler.lambda_handler',
             runtime       = aws_lambda.Runtime.PYTHON_3_8,
-            timeout       = core.Duration.minutes(15),
+            timeout       = Duration.minutes(15),
             memory_size   = 3000,
             environment   = environment,
         )

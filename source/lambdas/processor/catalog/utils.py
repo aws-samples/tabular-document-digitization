@@ -34,7 +34,7 @@ class ExcelHelper:
 
                 df.to_excel(writer, sheet_name = title, header = False, index = False)
 
-        writer.save()
+        writer.close()
 
         return output.getvalue()
 

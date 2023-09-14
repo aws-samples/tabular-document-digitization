@@ -4,15 +4,16 @@
 from pathlib import Path
 from uuid    import uuid4
 
-from aws_cdk import core, aws_iam, aws_lambda, aws_logs
+from aws_cdk import aws_iam, aws_lambda, aws_logs, Duration, CustomResource, Aws
 from aws_cdk.custom_resources import (
     Provider,
 )
+from constructs import Construct
 
-class A2ITemplateConstruct(core.Construct):
+class A2ITemplateConstruct(Construct):
     def __init__(
             self,
-            scope         : core.Construct,
+            scope         : Construct,
             prefix        : str,
             template_name : str,
             template_path : str
@@ -55,7 +56,7 @@ class A2ITemplateConstruct(core.Construct):
             code          = aws_lambda.Code.from_asset(lambda_path),
             handler       = 'a2i_template_manager.lambda_handler',
             runtime       = aws_lambda.Runtime.PYTHON_3_8,
-            timeout       = core.Duration.minutes(15),
+            timeout       = Duration.minutes(15),
             memory_size   = 3000,
             role          = lambda_role,
         )
@@ -70,7 +71,7 @@ class A2ITemplateConstruct(core.Construct):
       # there doesn't appear to be a way to grab that. so instead just always rebuild the
       # worker template even if it deletes and recreates the same resource.
 
-        self.__template_resource = core.CustomResource(
+        self.__template_resource = CustomResource(
             self,
             self.__template_name,
             service_token = provider.service_token,
@@ -83,7 +84,7 @@ class A2ITemplateConstruct(core.Construct):
 
     def get_template_arn(self):
 
-        return f'arn:aws:sagemaker:{core.Aws.REGION}:{core.Aws.ACCOUNT_ID}:human-task-ui/{self.__template_name}'
+        return f'arn:aws:sagemaker:{Aws.REGION}:{Aws.ACCOUNT_ID}:human-task-ui/{self.__template_name}'
 
     def get_template_resource(self):
 
